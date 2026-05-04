@@ -53,6 +53,7 @@ fetch_and_deploy_gh_release "databasus" "databasus/databasus" "tarball" "latest"
 
 msg_info "Building Databasus (Patience)"
 cd /opt/databasus/frontend
+$STD npm install
 $STD npm ci
 $STD npm run build
 cd /opt/databasus/backend
