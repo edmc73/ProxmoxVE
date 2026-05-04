@@ -67,6 +67,7 @@ function update_script() {
 
     msg_info "Updating Databasus"
     cd /opt/databasus/frontend
+    $STD npm install
     $STD npm ci
     $STD npm run build
     cd /opt/databasus/backend
